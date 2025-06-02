@@ -1,0 +1,35 @@
+{
+  "logo": {
+    "url": "assets/images/app/.png",
+    "title": "",
+    "description": ""
+  },
+  "navigation": [
+    {
+      "title": "home",
+      "route": "/"
+    },
+    {
+      "title": "about us",
+      "route": "/aboutus"
+    },
+    {
+      "title": "events",
+      "route": "/events"
+    },
+    {
+      "title": "contact",
+      "route": "/contact"
+    },
+    {
+      "title": "donate",
+      "route": "/donate"
+    }
+  ],
+  "contact": {
+    "email": "",
+    "number": "",
+    "timing": "",
+    "address": ["", ""]
+  }
+}

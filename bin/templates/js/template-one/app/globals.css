@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global CSS */
+input[type="number"].no-spinner {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+input[type="number"].no-spinner::-webkit-outer-spin-button,
+input[type="number"].no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none; /* Safari and Chrome */
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* user select */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --white-color: #ffffff;
+  --black-color: #171717;
+
+  /* Customized Colors */
+  --primary-color: #ffc265;
+  /* --secondary-color: #1da599; */
+  /* --secondary-color: #35d338; */
+  --secondary-color: #40c463;
+  --tertiary-color: #212830;
+  --quaternary-color: #e7f3f0;
+  --quinary-color: #f59e0b;
+  --senary-color: #f0ad54;
+  --septenary-color: #ffeee2;
+  --octonary-color: #f5c7a6;
+  --nonary-color: #6366f1;
+  --denary-color: #8b5cf6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #fdfdfb;
+    --foreground: #171717;
+
+    --white-color: #ffffff;
+    --black-color: #171717;
+
+    /* Customized Colors */
+    --primary-color: #ffc265;
+    --secondary-color: #1da599;
+    --tertiary-color: #212830;
+    --quaternary-color: #e7f3f0;
+    --quinary-color: #f8f6ed;
+    --senary-color: #0ea5e9;
+    --septenary-color: #9333ea;
+    --octonary-color: #f43f5e;
+    --nonary-color: #6366f1;
+    --denary-color: #8b5cf6;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Ensure the PayPal button container is styled properly */
+.paypal-button-container {
+  position: relative;
+}
+
+/* Style the custom span */
+.paypal-button-container .custom-donate-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  position: absolute;
+  left: 15px; /* Adjust for proper alignment */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
